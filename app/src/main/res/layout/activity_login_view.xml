@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#34013f"
+    tools:context=".LoginView"
+    android:padding="20dp">
+
+    <ImageView
+        android:id="@+id/logoImageView"
+        android:layout_width="match_parent"
+        android:layout_height="148dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="-30dp"
+        android:src="@drawable/logo" />
+
+    <TextView
+        android:id="@+id/appNameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/logoImageView"
+        android:layout_centerHorizontal="true"
+        android:paddingTop="10dp"
+        android:text="PassionVenture"
+        android:textColor="@color/white"
+        android:textSize="32sp" />
+
+    <TextView
+        android:id="@+id/welcomeBackTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/appNameTextView"
+        android:layout_centerHorizontal="true"
+        android:paddingTop="30dp"
+        android:text="Welcome back!"
+        android:textColor="#d19e13"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/signUpTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/welcomeBackTextView"
+        android:layout_centerHorizontal="true"
+        android:paddingTop="1dp"
+        android:text="Sign in to Continue!"
+        android:textColor="#d19e13"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <!-- Username Text View -->
+    <EditText
+        android:id="@+id/userName"
+        android:layout_width="280dp"
+        android:layout_height="45dp"
+        android:layout_below="@id/signUpTextView"
+        android:layout_centerHorizontal="true"
+        android:singleLine="true"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/rounded_corners"
+        android:hint="Username"
+        android:padding="5dp" />
+
+    <!-- Password Text View -->
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="280dp"
+        android:layout_height="45dp"
+        android:layout_below="@id/userName"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/rounded_corners"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:singleLine="true"
+        android:padding="5dp" />
+
+    <!-- Log in Button -->
+    <Button
+        android:id="@+id/logInButton"
+        android:layout_width="120dp"
+        android:layout_height="35dp"
+        android:layout_below="@id/password"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/button_corners"
+        android:text="Log in"
+        android:textColor="@color/white"
+        android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/passText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@id/welcomeBackTextView"
+            android:layout_marginTop="20dp"
+            android:text="Forgot Password?"
+            android:layout_marginLeft="10dp"
+            android:layout_below="@id/logInButton"
+            android:textColor="@color/white" />
+
+        <!-- Forgot Password Link -->
+        <Button
+            android:id="@+id/clickHereButtonLink"
+            android:layout_width="67dp"
+            android:layout_height="26dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="18dp"
+            android:background="@android:color/transparent"
+            android:text="Click here"
+            android:layout_toRightOf="@id/passText"
+            android:layout_below="@id/logInButton"
+            android:textColor="#fc5c05"
+            android:textSize="11sp" />
+
+    <TextView
+        android:id="@+id/accText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/passText"
+        android:layout_alignStart="@id/appNameTextView"
+        android:layout_marginTop="8dp"
+        android:text="Don't have an account yet?"
+        android:textColor="@color/white" />
+
+    <Button
+            android:id="@+id/signInButtonLink"
+            android:layout_width="47dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="6dp"
+            android:background="@android:color/transparent"
+            android:text="Sign in"
+            android:layout_toRightOf="@id/accText"
+            android:layout_below="@id/clickHereButtonLink"
+            android:textColor="#fc5c05"
+            android:textSize="11sp" />
+
+</RelativeLayout>

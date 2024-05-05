@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#34013f"
+    tools:context=".HomePageEnthusiastView"
+    android:padding="20dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+            <ImageView
+                android:id="@+id/logoHead"
+                android:layout_width="170dp"
+                android:layout_height="80dp"
+                android:layout_marginTop="-10dp"
+                android:layout_marginLeft="-40dp"
+                android:src="@drawable/logo" />
+
+            <ImageView
+                android:id="@+id/token"
+                android:layout_width="26dp"
+                android:layout_height="25dp"
+                android:layout_marginTop="18dp"
+                android:layout_marginLeft="100dp"
+                android:background="@drawable/token_img"
+                android:layout_toRightOf="@id/logoHead"
+                android:paddingLeft="8dp" />
+
+            <TextView
+                android:id="@+id/balance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="5dp"
+                android:text="9999"
+                android:layout_toRightOf="@id/token"
+                android:textColor="@color/white"/>
+            <ImageButton
+                android:id="@+id/BtnRecharge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:src="@drawable/add_symbol"
+                android:layout_toRightOf="@id/balance"
+                android:layout_marginLeft="3dp"
+                android:layout_marginTop="18dp"
+                />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:text="Hola, Enthusiast"
+                android:textColor="@color/white"
+                android:textSize="25sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:layout_marginLeft="35dp"
+                android:src="@drawable/profile" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="-20dp"
+            android:text="What do you want to learn today?"
+            android:textColor="@color/white"
+            android:textSize="15sp" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/button_corners"
+            android:layout_gravity="center">
+
+            <ImageButton
+                android:id="@+id/mentorButton"
+                android:layout_width="330dp"
+                android:layout_height="80dp"
+                android:background="@drawable/mentor_button_img"
+                android:text="LOOK FOR A MENTOR" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="LOOK FOR A MENTOR"
+                android:textColor="@color/white"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/button_corners"
+            android:layout_gravity="center">
+
+            <ImageButton
+                android:id="@+id/lmsButton"
+                android:layout_width="330dp"
+                android:layout_height="80dp"
+                android:background="@drawable/lms_img"
+                android:text="LOOK FOR A MENTOR" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="LEARNING RESOURCES"
+                android:textColor="@color/white"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/button_corners"
+            android:layout_gravity="center">
+
+            <ImageButton
+                android:id="@+id/jobMatchingButton"
+                android:layout_width="330dp"
+                android:layout_height="80dp"
+                android:background="@drawable/job_matching_img"
+                android:text="LOOK FOR A MENTOR" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="JOB MATCHING"
+                android:textColor="@color/white"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/button_corners">
+
+            <ImageButton
+                android:id="@+id/careerGuidanceButton"
+                android:layout_width="330dp"
+                android:layout_height="80dp"
+                android:background="@drawable/career_img"
+                android:text="LOOK FOR A MENTOR" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="CAREER GUIDANCE"
+                android:textColor="@color/white"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

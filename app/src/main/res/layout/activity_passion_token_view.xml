@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#34013f"
+    android:padding = "10dp"
+    tools:context=".PassionTokenView">
+
+    <Button
+        android:id = "@+id/BtnBack"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/arrow"
+        android:layout_marginTop="10dp"/>
+
+    <ImageView
+        android:id = "@+id/logo"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src = "@drawable/logo"
+        android:layout_toRightOf="@id/BtnBack"
+        android:layout_marginTop="-75dp"
+        android:layout_marginLeft="55dp"/>
+
+    <TextView
+        android:id="@+id/txtToken"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/BtnBack"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:text="Cash in your Passion Token"
+        android:textColor="#db8f0d"
+        android:textSize="28dp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:layout_width="75dp"
+        android:layout_height="70dp"
+        android:src="@drawable/token_img"
+        android:layout_below="@id/BtnBack"
+        android:layout_marginLeft="-50dp"
+        android:layout_marginTop="40dp"
+        android:layout_toRightOf="@id/txtToken"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/txtToken"
+        android:background="#db8f0d"
+        android:layout_marginTop="10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp">
+
+            <!-- Image 1 -->
+            <ImageView
+                android:id="@+id/img1"
+                android:layout_width="150dp"
+                android:layout_height="165dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/decrypted" />
+
+            <!-- Button 1 -->
+            <Button
+                android:id="@+id/btn1"
+                android:layout_width="150dp"
+                android:layout_height="40dp"
+                android:layout_below="@id/img1"
+                android:layout_margin="5dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="5dp"
+                android:background="#34013f"
+                android:text="₱49.00"
+                android:textColor="#db8f0d"
+                android:textStyle="bold" />
+
+            <!-- Image 2 -->
+            <ImageView
+                android:id="@+id/img2"
+                android:layout_width="150dp"
+                android:layout_height="165dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_alignParentEnd="true"
+                android:src="@drawable/decrypted" />
+
+            <!-- Button 2 -->
+            <Button
+                android:id="@+id/btn2"
+                android:layout_width="150dp"
+                android:layout_height="40dp"
+                android:layout_below="@id/img1"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="5dp"
+                android:background="#34013f"
+                android:text="₱249.00"
+                android:textColor="#db8f0d"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/img3"
+                android:layout_width="150dp"
+                android:layout_height="165dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/decrypted"
+                android:layout_below="@id/btn1"/>
+
+            <!-- Button 1 -->
+            <Button
+                android:id="@+id/btn3"
+                android:layout_width="150dp"
+                android:layout_height="40dp"
+                android:layout_below="@id/img3"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="5dp"
+                android:background="#34013f"
+                android:text="₱499.00"
+                android:textColor="#db8f0d"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/img4"
+                android:layout_width="150dp"
+                android:layout_height="165dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="5dp"
+                android:src="@drawable/decrypted"
+                android:layout_alignParentEnd="true"
+                android:layout_below="@id/btn1"/>
+
+            <!-- Button 1 -->
+            <Button
+                android:id="@+id/btn4"
+                android:layout_width="150dp"
+                android:layout_height="40dp"
+                android:layout_below="@id/img3"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="5dp"
+                android:background="#34013f"
+                android:text="₱1,249.00"
+                android:textColor="#db8f0d"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/img5"
+                android:layout_width="150dp"
+                android:layout_height="165dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/decrypted"
+                android:layout_below="@id/btn3"/>
+
+            <!-- Button 1 -->
+            <Button
+                android:id="@+id/btn5"
+                android:layout_width="150dp"
+                android:layout_height="40dp"
+                android:layout_below="@id/img5"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="5dp"
+                android:background="#34013f"
+                android:text="₱2,499.00"
+                android:textColor="#db8f0d"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/img6"
+                android:layout_width="150dp"
+                android:layout_height="165dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="5dp"
+                android:src="@drawable/decrypted"
+                android:layout_alignParentEnd="true"
+                android:layout_below="@id/btn3"/>
+
+            <!-- Button 1 -->
+            <Button
+                android:id="@+id/btn6"
+                android:layout_width="150dp"
+                android:layout_height="40dp"
+                android:layout_below="@id/img6"
+                android:layout_margin="5dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="5dp"
+                android:background="#34013f"
+                android:text="₱4,990.00"
+                android:layout_alignParentEnd="true"
+                android:textColor="#db8f0d"
+                android:textStyle="bold" />
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>
+

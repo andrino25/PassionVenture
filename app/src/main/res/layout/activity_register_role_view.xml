@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterRoleView"
+    android:background="#34013f"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <ImageView
+        android:id="@+id/logoImageView"
+        android:layout_width="match_parent"
+        android:layout_height="148dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="-30dp"
+        android:src="@drawable/logo" />
+
+    <TextView
+        android:id="@+id/appNameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/logoImageView"
+        android:layout_centerHorizontal="true"
+        android:paddingTop="10dp"
+        android:text="PassionVenture"
+        android:textColor="@color/white"
+        android:textSize="32sp" />
+
+
+    <TextView
+        android:id="@+id/txt1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Sign up Validation"
+        android:layout_centerHorizontal="true"
+        android:textColor="#fc9003"
+        android:textStyle="italic"
+        android:layout_below="@id/appNameTextView"
+        android:textSize="32sp"
+        />
+
+    <RelativeLayout
+        android:id="@+id/bg1"
+        android:layout_width="400dp"
+        android:layout_height="180dp"
+        android:background="#fc9003"
+        android:orientation="vertical"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/txt1"
+        android:layout_centerHorizontal="true">
+
+        <TextView
+            android:id="@+id/txt2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/white"
+            android:text="ARE YOU A?"
+            android:layout_centerHorizontal="true"
+            android:textSize="28sp"
+            />
+
+        <RadioButton
+            android:id="@+id/enthusiastRadioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="120dp"
+            android:text="ENTHUSIAST"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/white"
+            android:layout_below="@id/txt2"
+            android:textSize="20sp" />
+
+
+        <RadioButton
+            android:id="@+id/mentorRadioButton"
+            android:layout_width="117dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="MENTOR"
+            android:layout_alignStart="@id/enthusiastRadioButton"
+            android:layout_below="@id/enthusiastRadioButton"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/submitButton"
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/button_corners"
+        android:textColor="@color/white"
+        android:layout_below="@id/bg1"
+        android:text="SUBMIT"
+        android:textStyle="bold"/>
+
+
+</RelativeLayout>
