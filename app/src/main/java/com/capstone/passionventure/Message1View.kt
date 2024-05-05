@@ -34,7 +34,7 @@ class Message1View : AppCompatActivity() {
 
         // Handle back button click
         backToDashboard.setOnClickListener {
-            val intent = Intent(this, HomePageEnthusiastView::class.java)
+            val intent = Intent(this, HomePageMentorView::class.java)
             startActivity(intent)
         }
 

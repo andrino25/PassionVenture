@@ -1,5 +1,6 @@
 package com.capstone.passionventure
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.text.Editable
@@ -8,7 +9,7 @@ import android.widget.EditText
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 
-class JobListView : AppCompatActivity() {
+class JobListView : AppCompatActivity(), JobListAdapter.OnItemClickListener {
 
     private lateinit var jobListAdapter: JobListAdapter
     private lateinit var jobList: List<JobItem>
@@ -22,7 +23,7 @@ class JobListView : AppCompatActivity() {
         val recyclerView = findViewById<RecyclerView>(R.id.recyclerView)
         // Set up RecyclerView
         recyclerView.layoutManager = LinearLayoutManager(this)
-        jobListAdapter = JobListAdapter(jobList)
+        jobListAdapter = JobListAdapter(jobList, this)
         recyclerView.adapter = jobListAdapter
 
         val searchTab = findViewById<EditText>(R.id.searchTab)
@@ -49,6 +50,20 @@ class JobListView : AppCompatActivity() {
         jobListAdapter.filterList(filteredList)
     }
 
+
+    override fun onItemClick(position: Int) {
+
+        val dummyDetails = getString(R.string.dummy_details)
+        val clickedItem = jobList[position]
+        val intent = Intent(this, JobDetailsView::class.java)
+        intent.putExtra("jobDescription", clickedItem.jobDesc)
+        intent.putExtra("jobCompany", clickedItem.jobCompany)
+        intent.putExtra("jobCategory", clickedItem.jobCategory)
+        intent.putExtra("jobDetails", dummyDetails )
+        startActivity(intent)
+    }
+
+
     private fun generateJobList(): List<JobItem> {
         val jobList = mutableListOf<JobItem>()
 
@@ -62,3 +77,4 @@ class JobListView : AppCompatActivity() {
         return jobList
     }
 }
+

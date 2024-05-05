@@ -8,15 +8,30 @@ import android.widget.Filterable
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 
-class JobListAdapter(private var jobList: List<JobItem>) :
+class JobListAdapter(private var jobList: List<JobItem>, private val listener: OnItemClickListener) :
     RecyclerView.Adapter<JobListAdapter.JobViewHolder>(), Filterable {
 
     private var filteredJobList = jobList
 
-    inner class JobViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
+    inner class JobViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView), View.OnClickListener {
         val jobDesc: TextView = itemView.findViewById(R.id.jobDesc)
         val jobCompany: TextView = itemView.findViewById(R.id.jobCompany)
         val category: TextView = itemView.findViewById(R.id.jobCategory)
+
+        init {
+            itemView.setOnClickListener(this)
+        }
+
+        override fun onClick(v: View?) {
+            val position = adapterPosition
+            if (position != RecyclerView.NO_POSITION) {
+                listener.onItemClick(position)
+            }
+        }
+    }
+
+    interface OnItemClickListener {
+        fun onItemClick(position: Int)
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): JobViewHolder {
@@ -67,7 +82,6 @@ class JobListAdapter(private var jobList: List<JobItem>) :
         notifyDataSetChanged()
     }
 }
-
 
 
 data class JobItem(
