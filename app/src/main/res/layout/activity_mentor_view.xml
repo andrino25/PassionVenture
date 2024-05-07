@@ -17,240 +17,46 @@
             android:id="@+id/TitleTextView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="120dp"
-            android:layout_marginTop="50dp"
+           android:layout_centerHorizontal="true"
+            android:layout_marginTop="40dp"
             android:fontFamily="serif"
             android:text="Mentors"
             android:textColor="@color/white"
             android:textSize="40dp"
             android:textStyle="bold" />
 
-        <ImageView
-            android:id="@+id/imageView"
-            android:layout_width="294dp"
-            android:layout_height="89dp"
-            android:layout_marginLeft="250dp"
-            android:layout_marginTop="-15dp"
-            app:srcCompat="@drawable/p" />
+        <EditText
+            android:id="@+id/searchTab"
+            android:layout_width="320dp"
+            android:layout_height="50dp"
+            android:hint="Search a mentor"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="30dp"
+            android:layout_below="@id/TitleTextView"
+            android:padding="10dp"
+            android:background="@drawable/rounded_corners" />
 
-        <Button
-            android:id="@+id/button1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
-            android:layout_marginTop="110dp"
-            android:layout_marginBottom="585dp"
-            android:backgroundTint="#FF9800"
-            android:text="Culinary"
-            android:textColor="@color/white"
-            android:textSize="11dp" />
-
-        <Button
-            android:id="@+id/button2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="110dp"
-            android:layout_marginTop="110dp"
-            android:layout_marginBottom="585dp"
-            android:backgroundTint="#310E37"
-            android:text="Agriculture"
-            android:textColor="@color/white"
-            android:textSize="11dp" />
-
-        <Button
-            android:id="@+id/button3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="210dp"
-            android:layout_marginTop="110dp"
-            android:layout_marginBottom="585dp"
-            android:backgroundTint="#310E37"
-            android:text="Retail"
-            android:textColor="@color/white"
-            android:textSize="11dp"/>
-
-        <Button
-            android:id="@+id/button4"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="280dp"
-            android:layout_marginTop="110dp"
-            android:layout_marginBottom="585dp"
-            android:backgroundTint="#310E37"
-            android:text="Technology"
-            android:textColor="@color/white"
-            android:textSize="11dp"/>
-
-        <androidx.appcompat.widget.SearchView
-            android:layout_width="388dp"
-            android:layout_height="36dp"
-            android:layout_marginLeft="10dp"
-            android:layout_marginTop="160dp"
-            android:layout_marginBottom="50dp"
-            android:background="@color/white" />
-
-        <TextView
-            android:id="@+id/TitleTextView1"
-            android:layout_width="146dp"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="55dp"
-            android:layout_marginTop="170dp"
-            android:fontFamily="sans-serif-thin"
-            android:text="Search for mentor"
-            android:textColor="#A69C9C"
-            android:textSize="15dp"
-            android:textStyle="bold" />
-
-        <LinearLayout
+        <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="537dp"
-            android:layout_marginTop="200dp"
+            android:layout_height="540dp"
+            android:layout_below="@id/searchTab"
             android:layout_marginBottom="50dp"
-            android:background="@color/white"
-            android:orientation="vertical">
+            android:background="@color/white">
 
-            <TextView
-                android:id="@+id/TitleTextView2"
-                android:layout_width="308dp"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="50dp"
-                android:layout_marginTop="10dp"
-                android:fontFamily="serif"
-                android:text="Discover Success with the World's Best Mentor"
-                android:textColor="@color/black"
-                android:textSize="25dp"
-                android:textStyle="bold" />
-
-            <ImageView
-                android:id="@+id/imageView2"
-                android:layout_width="158dp"
-                android:layout_height="92dp"
-                android:layout_marginLeft="20dp"
-                android:layout_marginTop="5dp"
-                android:background="#310E37"
-                app:srcCompat="@drawable/giii1" />
-
-            <TextView
-                android:id="@+id/p1TextView4"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="30dp"
-                android:layout_marginTop="-20dp"
-                android:fontFamily="serif"
-                android:text="Joseph Lhee Villariasa"
-                android:textColor="@color/white"
-                android:textSize="11dp"
-                android:textStyle="bold" />
-
-            <ImageView
-                android:id="@+id/imageView3"
-                android:layout_width="158dp"
-                android:layout_height="92dp"
-                android:layout_marginLeft="20dp"
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:layout_marginStart="20dp"
                 android:layout_marginTop="20dp"
-                android:background="#310E37"
-                app:srcCompat="@drawable/gii3"/>
-
-            <TextView
-                android:id="@+id/p1TextView5"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="30dp"
-                android:layout_marginTop="-20dp"
-                android:fontFamily="serif"
-                android:text="Earl Brando Andrino"
-                android:textColor="@color/white"
-                android:textSize="11dp"
-                android:textStyle="bold" />
-
-            <ImageView
-                android:id="@+id/imageView4"
-                android:layout_width="158dp"
-                android:layout_height="92dp"
-                android:layout_marginLeft="20dp"
-                android:layout_marginTop="20dp"
-                android:background="#310E37"
-                app:srcCompat="@drawable/eric"/>
-
-            <TextView
-                android:id="@+id/p1TextView6"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="30dp"
-                android:layout_marginTop="-20dp"
-                android:fontFamily="serif"
-                android:text="Eric Chong"
-                android:textColor="@color/white"
-                android:textSize="11dp"
-                android:textStyle="bold" />
-
-            <ImageView
-                android:id="@+id/imageView5"
-                android:layout_width="158dp"
-                android:layout_height="92dp"
-                android:layout_marginLeft="230dp"
-                android:layout_marginTop="-303dp"
-                android:background="#310E37"
-                app:srcCompat="@drawable/giii2"/>
-
-            <TextView
-                android:id="@+id/p1TextView7"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="250dp"
-                android:layout_marginTop="-20dp"
-                android:fontFamily="serif"
-                android:text="Kevin Apiag"
-                android:textColor="@color/white"
-                android:textSize="11dp"
-                android:textStyle="bold" />
-
-            <ImageView
-                android:id="@+id/imageView6"
-                android:layout_width="158dp"
-                android:layout_height="92dp"
-                android:layout_marginLeft="230dp"
-                android:layout_marginTop="20dp"
-                android:background="#310E37"
-                app:srcCompat="@drawable/gordonr"/>
-
-            <TextView
-                android:id="@+id/p1TextView8"
-                android:layout_width="wrap_content"
-                android:layout_height="17dp"
-                android:layout_marginLeft="250dp"
-                android:layout_marginTop="-20dp"
+                android:layout_marginEnd="20dp"
                 android:layout_marginBottom="20dp"
-                android:fontFamily="serif"
-                android:text="Gordon Ramsay"
-                android:textColor="@color/white"
-                android:textSize="11dp"
-                android:textStyle="bold" />
-
-            <ImageView
-                android:id="@+id/imageView7"
-                android:layout_width="158dp"
-                android:layout_height="92dp"
-                android:layout_marginLeft="230dp"
-                android:layout_marginTop="-3dp"
-                android:background="#310E37"
-                app:srcCompat="@drawable/ng"/>
-
-            <TextView
-                android:id="@+id/p1TextView9"
-                android:layout_width="wrap_content"
-                android:layout_height="17dp"
-                android:layout_marginLeft="250dp"
-                android:layout_marginTop="-20dp"
-                android:layout_marginBottom="20dp"
-                android:fontFamily="serif"
-                android:text="Nigel Ng"
-                android:textColor="@color/white"
-                android:textSize="11dp"
-                android:textStyle="bold" />
+                tools:listitem="@layout/mentors_list" />
 
 
-        </LinearLayout>
+        </RelativeLayout>
 
     </RelativeLayout>
 

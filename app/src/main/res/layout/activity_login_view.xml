@@ -91,36 +91,12 @@
         android:textColor="@color/white"
         android:textStyle="bold" />
 
-        <TextView
-            android:id="@+id/passText"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignStart="@id/welcomeBackTextView"
-            android:layout_marginTop="20dp"
-            android:text="Forgot Password?"
-            android:layout_marginLeft="10dp"
-            android:layout_below="@id/logInButton"
-            android:textColor="@color/white" />
-
-        <!-- Forgot Password Link -->
-        <Button
-            android:id="@+id/clickHereButtonLink"
-            android:layout_width="67dp"
-            android:layout_height="26dp"
-            android:layout_marginStart="5dp"
-            android:layout_marginTop="18dp"
-            android:background="@android:color/transparent"
-            android:text="Click here"
-            android:layout_toRightOf="@id/passText"
-            android:layout_below="@id/logInButton"
-            android:textColor="#fc5c05"
-            android:textSize="11sp" />
 
     <TextView
         android:id="@+id/accText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/passText"
+        android:layout_below="@id/logInButton"
         android:layout_alignStart="@id/appNameTextView"
         android:layout_marginTop="8dp"
         android:text="Don't have an account yet?"
@@ -131,11 +107,11 @@
             android:layout_width="47dp"
             android:layout_height="20dp"
             android:layout_marginStart="5dp"
-            android:layout_marginTop="6dp"
+            android:layout_marginTop="8dp"
             android:background="@android:color/transparent"
             android:text="Sign in"
             android:layout_toRightOf="@id/accText"
-            android:layout_below="@id/clickHereButtonLink"
+            android:layout_below="@id/logInButton"
             android:textColor="#fc5c05"
             android:textSize="11sp" />
 
