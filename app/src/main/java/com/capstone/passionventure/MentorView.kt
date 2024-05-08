@@ -55,7 +55,7 @@ class MentorView : AppCompatActivity() {
         } else {
             val searchText = text.toLowerCase().trim()
             mentorList.forEach {
-                if (it.category.toLowerCase().contains(searchText)) {
+                if (it.name.toLowerCase().contains(searchText) || it.category.toLowerCase().contains(searchText)) {
                     filteredList.add(it)
                 }
             }
