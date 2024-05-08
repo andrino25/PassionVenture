@@ -51,7 +51,8 @@ class MentorRegisterView : AppCompatActivity() {
             val address = findViewById<EditText>(R.id.address).text.toString().trim()
             val confirmPassword = findViewById<EditText>(R.id.confirmPassword).text.toString().trim()
 
-            if (userName.isNotEmpty() && password.isNotEmpty() && confirmPassword.isNotEmpty()) {
+            if (userName.isNotEmpty() && password.isNotEmpty() && email.isNotEmpty() &&
+                name.isNotEmpty() && contact.isNotEmpty() && address.isNotEmpty() && confirmPassword.isNotEmpty()) {
                 if (password == confirmPassword) {
                     // Check if user already exists
                     if (!dbHelper.isUserExists(userName)) {
